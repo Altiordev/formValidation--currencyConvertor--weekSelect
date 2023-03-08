@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uy ishi 2</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <article>
+
+        <div class="top-black">
+
+            Form validation
+
+        </div>
+
+        <div class="form-wrapper">
+
+            <form class="form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
+
+                <div class="inputs phone">
+
+                    <span>phone<span class="required">*</span></span>
+
+                    <div class="div_phone">
+                        <input id="phone" class="" type="tel" name="phone_number" placeholder="Example: 998-90-123-45-67">
+                        <label class="label_name requiredPhone" for="phone">phone number</label>
+                    </div>
+
+
+                </div>
+
+                <div class="inputs subject">
+
+                    <span>Password</span>
+
+                    <input class="input password" type="password" name="Password" id="passwod">
+
+                </div>
+
+                <div class="inputs passwords">
+
+                    <span>Confirm Password<span class="required">*</span></span>
+
+                    <div class="confirm__password">
+
+                        <input class="input password" type="password" id="confirmPassword">
+                        <label class="label_name" id="requiredPassword" for="confirmPassword"></label>
+
+                    </div>
+
+                </div>
+
+                <div class="btn">
+
+                    <input class="button_submit" type="submit" value="register">
+
+                </div>
+
+
+            </form>
+        </div>
+    </article>
+
+    <div class="right">
+        <article>
+
+            <div class="top-black">
+
+                currency converter
+
+            </div>
+
+            <div class="form-wrapper">
+
+                <div class="currency">
+
+                    <div class="valute uzsto">
+
+                        <div>
+                            <label for="uzs"><img src="./images/icons/uzb.svg" alt="uzb"> UZS - Uzbekistan so‘m</label>
+                            <input class="uzs" id="uzs" type="text">
+                        </div>
+                        <span>TO</span>
+                        <div>
+                            <label for="usd"><img src="./images/icons/usa.svg" alt="usa"> USD - American dollar</label>
+                            <input class="usd" id="usd" type="text" disabled>
+                        </div>
+                        <div>
+                            <label for="eur"><img src="./images/icons/eur.svg" alt="eur"> EUR - Euro</label>
+                            <input class="eur" id="eur" type="text" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="valute usdto">
+
+                        <div>
+                            <label for="usd2"><img src="./images/icons/usa.svg" alt="usa"> USD - American dollar</label>
+                            <input class="usd usd2" id="usd2" type="text">
+                        </div>
+                        <span>TO</span>
+                        <div>
+                            <label for="uzs2"><img src="./images/icons/uzb.svg" alt="uzb"> UZS - Uzbekistan so‘m</label>
+                            <input class="uzs uzs2" id="uzs2" type="text" disabled>
+                        </div>
+                        <div>
+                            <label for="eur2"><img src="./images/icons/eur.svg" alt="eur"> EUR - Euro</label>
+                            <input class="eur eur2" id="eur2" type="text" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="valute eurto">
+
+                        <div>
+                            <label for="eur3"><img src="./images/icons/eur.svg" alt="eur"> EUR - Euro</label>
+                            <input class="eur eur3" id="eur3" type="text">
+                        </div>
+                        <span>TO</span>
+                        <div>
+                            <label for="usd3"><img src="./images/icons/usa.svg" alt="usa"> USD - American dollar</label>
+                            <input class="usd usd3" id="usd3" type="text" disabled>
+                        </div>
+                        <div>
+                            <label for="uzs3"><img src="./images/icons/uzb.svg" alt="uzb"> UZS - Uzbekistan so‘m</label>
+                            <input class="uzs uzs3" id="uzs3" type="text" disabled>
+                        </div>
+
+                    </div>
+
+                    <div class="exchange">
+                        <div>
+                            <span class="usdToUzs"></span>
+                            <span class="usdToEur"></span>
+                        </div>
+                        <div>
+                            <span class="eurToUzs"></span>
+                            <span class="eurToUsd"></span>
+                        </div>
+                        <div>
+                            <span class="uzsToUsd"></span>
+                            <span class="uzsToEur"></span>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button class="button_submit btn_exchange">convert</button>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="top-black">
+                Week
+            </div>
+
+
+            <div class="week">
+
+                <div class="week_top">
+
+                    <select class="select_week">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+
+                    <div>day of the week: <span class="day">Monday</span></div>
+
+                </div>
+
+                <div class="btn">
+                    <button class="button_submit btn_week">click me</button>
+                </div>
+            </div>
+
+
+
+        </article>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

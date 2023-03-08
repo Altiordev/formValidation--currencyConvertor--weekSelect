@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5vw;
+    background-image: linear-gradient(to right top, #0badea, #009fff, #008aff, #6b6aff, #b723ff);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    column-gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    width: 700px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to right top, #0badea, #009fff, #008aff, #6b6aff, #b723ff);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(253, 77, 91, 0.7);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 77, 91, 1);
+}
+
+.required {
+    color: red;
+}
+
+.top-black {
+    text-transform: uppercase;
+    background-color: #000;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 15px 0;
+}
+
+form {
+    max-width: 100%;
+    padding: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.currency,
+.week {
+    max-width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.label_name {
+    text-transform: capitalize;
+    color: gray;
+    margin-top: 5px;
+    opacity: 0.4;
+    font-size: 10px;
+}
+
+input {
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 5px;
+    height: 43px;
+    color: #000;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    margin-left: 20px;
+}
+
+form .name,
+form .phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.phone input::placeholder {
+    color: gray;
+    opacity: 0.4;
+}
+
+span {
+    width: 100px;
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.requiredPhone {
+    background-color: transparent !important;
+}
+
+.first_name,
+.last_name,
+.div_area,
+.div_phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.div_area {
+    width: 100px;
+}
+
+.div_phone {
+    width: 82%;
+}
+
+.confirm__password {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 5px;
+}
+
+.confirm__password input {
+    margin: 0;
+}
+
+#requiredPassword {
+    background-color: transparent !important;
+}
+
+.valute {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.valute img {
+    width: 20px;
+    height: 10px;
+}
+
+.valute input {
+    width: 100%;
+}
+
+.valute div {
+    display: flex;
+    flex-direction: column;
+}
+
+.valute span {
+    width: auto;
+    transform: translateY(10px);
+}
+
+.uzsto .usd,
+.uzsto .eur {
+    cursor: not-allowed;
+}
+
+.usdto .uzs,
+.usdto .eur {
+    cursor: not-allowed;
+}
+
+.eurto .uzs,
+.eurto .usd {
+    cursor: not-allowed;
+}
+
+.exchange {
+    /* width: 100%; */
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+
+.exchange div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.exchange span {
+    width: auto;
+}
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.button_submit {
+    padding: 10px 35px;
+    background-color: #FD4D5B;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vw;
+}
+
+.select_week {
+    width: 70px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.week_top {
+    display: flex;
+    align-items: center;
+    column-gap: 5vh;
+}
+
+.week_top div {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.week_top div span {
+    color: #FD4D5B;
+    font-size: inherit;
+}
+
+.red_border {
+    border: 1px solid red;
+}
+
+.red {
+    background-color: red;
+    color: red;
+}
+
+@media screen and (max-width: 705px) {
+    article {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    body {
+        height: 100%;
+        flex-direction: column;
+        row-gap: 5vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .right {
+        row-gap: 5vw;
+    }
+}
